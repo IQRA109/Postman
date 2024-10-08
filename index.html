@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTMAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to POSTMAN</h1>
+    </header>
+    
+    <section class="auth-section">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="loginUsername">
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword">
+            <button type="submit">Login</button>
+        </form>
+
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <label for="signupUsername">Username:</label>
+            <input type="text" id="signupUsername" name="signupUsername">
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="signupPassword">
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <section class="anime-section">
+        <h2>Your Anime List</h2>
+        <div class="anime-item">
+            <input type="text" id="anime1" value="Naruto">
+            <button onclick="editAnime('anime1')">Edit Name</button>
+        </div>
+        <div class="anime-item">
+            <input type="text" id="anime2" value="One Piece">
+            <button onclick="editAnime('anime2')">Edit Name</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
